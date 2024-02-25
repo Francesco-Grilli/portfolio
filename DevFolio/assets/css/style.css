@@ -517,6 +517,7 @@ a:hover {
   letter-spacing: 0.4px;
   position: relative;
   text-transform: uppercase;
+  flex-direction: column;
 }
 
 .navbar a i,
@@ -641,6 +642,7 @@ a:hover {
 }
 
 .navbar-mobile {
+  height: auto;
   position: fixed;
   overflow: hidden;
   top: 0;
@@ -650,6 +652,7 @@ a:hover {
   background: rgba(78, 78, 78, 0.9);
   transition: 0.3s;
   z-index: 999;
+  flex-direction: column;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -660,15 +663,16 @@ a:hover {
 
 .navbar-mobile ul {
   display: block;
-  position: absolute;
+  position: relative;
   top: 55px;
   right: 15px;
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #272727;
   overflow-y: auto;
   transition: 0.3s;
+  width: 50vh;
 }
 
 .navbar-mobile>ul>li {
@@ -685,7 +689,7 @@ a:hover {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #4e4e4e;
+  color: #ffffff;
 }
 
 .navbar-mobile a:hover,
@@ -1464,9 +1468,10 @@ footer .credits a {
 
 .column {
   float: left;
-  width: 33%; /* Set each column to take up half of the width */
+  align-content: flex-start;
+  width: 30%; /* Set each column to take up half of the width */
   list-style-type: none; /* Remove bullets */
-  padding-left: 20px; /* Add some padding to the left */
+  padding-left: 10px; /* Add some padding to the left */
 }
 
 /* Style for list items */
